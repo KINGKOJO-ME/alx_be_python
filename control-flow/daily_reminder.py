@@ -1,8 +1,8 @@
-task = input("Enter the task for your daily reminder: ")
-priority = input("Enter the priority level (high, medium, low): ")
-time_bound = input("Is it time-bound? (yes/no): ").strip().lower()
+Task = input("Enter the task for your daily reminder: ")
+Priority = input("Enter the priority level (high, medium, low): ")
+Time_Bound = input("Is it time-bound? (yes/no): ").strip().lower()
 
-match priority:
+match Priority:
     case "high":
         message = f"Reminder: {task} - This is a high priority task."
            
@@ -14,7 +14,7 @@ match priority:
     case _:
         message = f"Reminder: '{task}' has an unspecified priority level."
 
-if time_bound == "yes":
+if Time_Bound == "yes":
     message += " that requires immediate attention!"
 
 else:
