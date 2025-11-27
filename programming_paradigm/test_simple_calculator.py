@@ -32,5 +32,3 @@ class TestSimpleCalculator(unittest.TestCase):
         self.assertEqual(self.calculator.divide(-9, -3), 3)
         self.assertEqual(self.calculator.divide(5, 2), 2.5)
 
-if __name__ == '__main__':
-    unittest.main()
