@@ -10,8 +10,8 @@ def safe_divide(numerator, denominator):
         print(f"The result of the division is: {result}")
 
     except ZeroDivisionError:
-        return "Error: Division by zero is not allowed."
+        return "Error: Cannot divide by zero."
     except ValueError:
-        return "Error: Invalid input. Please enter numbers."
+        return "Error: Please enter numeric values only."
     
         
